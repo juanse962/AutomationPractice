@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="17d1917e82c8d63f15442b649cf8969236273b0464f983dcadc228eb35e95bcd.html">Automation Of Web Shopping</a></span>
+                > <span class="truncate-60"><a
+                    href="21de0d6c2b24c7a12743ab6c00368c93d7bacc1fe1748c374a618e617ac5bcb0.html">Enter the website and fill in the form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-07-2021 15:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Automation Of Web Shopping </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">Smoke
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Enter the website and fill in the form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given the user wishes to create an account on the website<br>When the user enters his or her data for the creation of a new system<br><table class='embedded'><thead><th>email</th><th>firstname</th><th>lastname</th><th>pwd</th><th>day</th><th>month</th><th>year</th><th>addressname</th><th>addresslast</th><th>company</th><th>address1</th><th>address2</th><th>city</th><th>state</th><th>postlcod</th><th>comment</th><th>mobile</th><th>home</th><th>alias</th></thead><tbody><tr><td>jsgprueb</td><td>&lt;firtsname&gt;</td><td>Gomez</td><td>&lt;pwdgenerate&gt;</td><td>5</td><td>October</td><td>1996</td><td>luiz</td><td>lopez</td><td>devbrothers</td><td>calle11</td><td>tower 14</td><td>medallin</td><td>Massachusetts</td><td>05501</td><td>prueba</td><td>323564565</td><td>323212</td><td>&lt;alias&gt;</td></tr></tbody></table><br>Then he must display a message MY ACCOUNT</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" 1: Enter the website and fill in the form ({firtsname=Camilo, pwdgenerate=123456, alias=luis})" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" User open task" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" User opens the Home page" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" User open task (completed)" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Camilo | Gomez | 123456 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | luis |" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" User login" width="1350"/>
+                <img src="34352ff49d2ec6370868361476af54fa251907396ddaa163ee5ec754ad17f618.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb82743@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="6244fe58e7000e7bda6154469858bee35185ba8a112246f72c4a3e217f68b6da.png" title=" User enters 'jsgprueb82743@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="6244fe58e7000e7bda6154469858bee35185ba8a112246f72c4a3e217f68b6da.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="60bf36e138a23528274df83e8b6f8b87ffd8765afd8a6b3b9f8c1fe6cec5aaa9.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="60bf36e138a23528274df83e8b6f8b87ffd8765afd8a6b3b9f8c1fe6cec5aaa9.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="57eadc75dc7d0175d24d1f938f58849d48ac5fd8784d15e939eec8d6f29a9f8a.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="57eadc75dc7d0175d24d1f938f58849d48ac5fd8784d15e939eec8d6f29a9f8a.png" title=" User enters 'Camilo' into Seleccionar input name" width="1350"/>
+                <img src="abfc2ba8c08c570492d1e4d184e0e217fe8e5cacb11cabc3d7f8bf46268fc98c.png" title=" User enters 'Camilo' into Seleccionar input name (completed)" width="1350"/>
+                <img src="abfc2ba8c08c570492d1e4d184e0e217fe8e5cacb11cabc3d7f8bf46268fc98c.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="b3f54288cb84742520578a5efe3408fa210ccfe3c67389247e185393629cacac.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="b3f54288cb84742520578a5efe3408fa210ccfe3c67389247e185393629cacac.png" title=" User enters 'mobile44468@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="1154c0f228b91d1f4987373ae1577a46679bd022bbc60b1fde83a78282956d67.png" title=" User enters 'mobile44468@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="1154c0f228b91d1f4987373ae1577a46679bd022bbc60b1fde83a78282956d67.png" title=" User enters '123456' into Seleccionar input de password" width="1350"/>
+                <img src="78721372accc5a0582ddc22423dc6e5a18a64c806c06211a87b6a67c935ffd57.png" title=" User enters '123456' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="78721372accc5a0582ddc22423dc6e5a18a64c806c06211a87b6a67c935ffd57.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="3da4ba0b5417cf07fc6a337cac8e9ccc96500639c25eb2327d4d6cee99fb0095.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="3da4ba0b5417cf07fc6a337cac8e9ccc96500639c25eb2327d4d6cee99fb0095.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="24097693ee7fcf520350862dd0632564a36564a051e19f473f4884cb1a201a5b.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="24097693ee7fcf520350862dd0632564a36564a051e19f473f4884cb1a201a5b.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="fcd062551b1194918d2fe00b77de3ed080321d72178ea01f461f3bc704729ff0.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="fcd062551b1194918d2fe00b77de3ed080321d72178ea01f461f3bc704729ff0.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="01e4f9ca57132afee3cd9a825604805f70fa9c15be765166bf34ae146b001a67.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="01e4f9ca57132afee3cd9a825604805f70fa9c15be765166bf34ae146b001a67.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="279408dba034bf26dba151dc63a55873c3712a749bdd3c2a72918aebf7a1e78c.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="279408dba034bf26dba151dc63a55873c3712a749bdd3c2a72918aebf7a1e78c.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="07736d41bb8df5493b9317a2f99294b0295a6d3d99aa4074a0f78f48c18b0cbf.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="07736d41bb8df5493b9317a2f99294b0295a6d3d99aa4074a0f78f48c18b0cbf.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="3629bc560c436967403b1da4e64e8636e9fe2c55c13167d39ca07e6280ac0ffb.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="3629bc560c436967403b1da4e64e8636e9fe2c55c13167d39ca07e6280ac0ffb.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="8e1fd1ca6886b327044290d5933f301bfe278478f2e20dc74bdd9aea4ef81a89.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="8e1fd1ca6886b327044290d5933f301bfe278478f2e20dc74bdd9aea4ef81a89.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="811d31caacaff8fa532b520060a35ad55d7a559e74e0a3cde085f5d280799a7a.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="811d31caacaff8fa532b520060a35ad55d7a559e74e0a3cde085f5d280799a7a.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="8c2f0d901d7fb1eaa81aff3fbea9f179c1bb9ee1877bb1207b545a52ea41a736.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="8c2f0d901d7fb1eaa81aff3fbea9f179c1bb9ee1877bb1207b545a52ea41a736.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="419c34d7f1e4985748d14b3e0b19fd65cef6bb85b741cfee79fc127d847a7260.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="419c34d7f1e4985748d14b3e0b19fd65cef6bb85b741cfee79fc127d847a7260.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="314a1d280ca7010c9e2b5b38f9b1f701455dde17d5b664faede2e22106c2ea22.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="314a1d280ca7010c9e2b5b38f9b1f701455dde17d5b664faede2e22106c2ea22.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'luis' into Alias apra recordad la direccion" width="1350"/>
+                <img src="afd0ddb1fdc13e0725509b81bcd9bb9e4c10046a1b66eedadc5159927d30d4ca.png" title=" User enters 'luis' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="afd0ddb1fdc13e0725509b81bcd9bb9e4c10046a1b66eedadc5159927d30d4ca.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" User login (completed)" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Camilo | Gomez | 123456 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | luis | (completed)" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" Then answer" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" Then answer (completed)" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="5310c0d9f2a1e6009f0c2405faa0f219b62b2e211ad6e23fdd6c4ea7358f079a.png" title=" 1: Enter the website and fill in the form ({firtsname=Camilo, pwdgenerate=123456, alias=luis}) (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" 2: Enter the website and fill in the form ({firtsname=Cristian, pwdgenerate=65432, alias=Jose})" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User opens the Home page" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Cristian | Gomez | 65432 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Jose |" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User login" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb70264@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="7f67d7629dd77bfd2cdc8af5c67680bac0be1356057ec2fd8d18a4ca618f267e.png" title=" User enters 'jsgprueb70264@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="7f67d7629dd77bfd2cdc8af5c67680bac0be1356057ec2fd8d18a4ca618f267e.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="507906b60159d8947fb2751f662f5b3b79d1b1ac80b57d8b6f39300785fdd721.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="507906b60159d8947fb2751f662f5b3b79d1b1ac80b57d8b6f39300785fdd721.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User enters 'Cristian' into Seleccionar input name" width="1350"/>
+                <img src="bc720f42659ad33f4fe801528fb09348eb3c9721d9eac8f5525d373e9ced2de9.png" title=" User enters 'Cristian' into Seleccionar input name (completed)" width="1350"/>
+                <img src="bc720f42659ad33f4fe801528fb09348eb3c9721d9eac8f5525d373e9ced2de9.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="bafaed52991dea777d2e6a5a668cdc074f1cb6ca78cadbcf5898536b054f0a31.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="bafaed52991dea777d2e6a5a668cdc074f1cb6ca78cadbcf5898536b054f0a31.png" title=" User enters 'mobile22202@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="9c02e35252f2c1e509ad4793bab96003daae696db3f6d6ed481957a704a4f57c.png" title=" User enters 'mobile22202@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="9c02e35252f2c1e509ad4793bab96003daae696db3f6d6ed481957a704a4f57c.png" title=" User enters '65432' into Seleccionar input de password" width="1350"/>
+                <img src="a686b241f9795fa499eca5abcb95a370abd55a34f78d85e8425219adac44f6e9.png" title=" User enters '65432' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="a686b241f9795fa499eca5abcb95a370abd55a34f78d85e8425219adac44f6e9.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="d1bb316d1fad141a336a35cb07b5951e0ed6a2491d2941692de90f9b143a5960.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="d1bb316d1fad141a336a35cb07b5951e0ed6a2491d2941692de90f9b143a5960.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="8de2d5cadad07345a7cc661d5275af6310ebe67fc85682de56e2928d4dc8c9f0.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="8de2d5cadad07345a7cc661d5275af6310ebe67fc85682de56e2928d4dc8c9f0.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="18bd4b57789fabc67899c4ab911cc2698b48901b9116c2215609c4bf921b27a8.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="18bd4b57789fabc67899c4ab911cc2698b48901b9116c2215609c4bf921b27a8.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="1b08b13d6587647ba578c022086a21245907022337ab2102b247560b18505962.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="1b08b13d6587647ba578c022086a21245907022337ab2102b247560b18505962.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="075bfce8f7619dbea35d99819346056ece495b6e78bddc933198d1d4c039353a.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="075bfce8f7619dbea35d99819346056ece495b6e78bddc933198d1d4c039353a.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="7f84a3031cc5cf790235c2d913da84fe7c504cd1bbda75c4d8d0eff2c1607612.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="7f84a3031cc5cf790235c2d913da84fe7c504cd1bbda75c4d8d0eff2c1607612.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="e0ac9396c71ba3b622c82ba994f1a29358ed390d6fb3152753b3284a1f73d5ed.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="e0ac9396c71ba3b622c82ba994f1a29358ed390d6fb3152753b3284a1f73d5ed.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="42e5804130394d07714752ddd4fc42ade9c8ce340ecbe39fe0b7e7a1ec9d90eb.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="42e5804130394d07714752ddd4fc42ade9c8ce340ecbe39fe0b7e7a1ec9d90eb.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="f89b7b55c10987ea847dcb42e4b4fb3474dab8db9106be520dfdcdd665aaf5a1.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="f89b7b55c10987ea847dcb42e4b4fb3474dab8db9106be520dfdcdd665aaf5a1.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="d5b8d9574e61e37d3b61a3bfd9c7eb5cfd3be5f268c3b4000a0242558b93de27.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="d5b8d9574e61e37d3b61a3bfd9c7eb5cfd3be5f268c3b4000a0242558b93de27.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="f11c03fa994d2f07c0102cd159b670c989efde8f35331557b92649f85ebe58de.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="f11c03fa994d2f07c0102cd159b670c989efde8f35331557b92649f85ebe58de.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="8525f97f8eb744a153220bc00aeb88b902b3f0a30ec149ae67869343a100616a.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="8525f97f8eb744a153220bc00aeb88b902b3f0a30ec149ae67869343a100616a.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="c335a2421b938d861433d95fb8eb0783cbebc47653bd1bd1a7e2fe20fe254934.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="c335a2421b938d861433d95fb8eb0783cbebc47653bd1bd1a7e2fe20fe254934.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'Jose' into Alias apra recordad la direccion" width="1350"/>
+                <img src="1a3797a03ca44da48b251e6f3df080a277e875402fbe294ed43ff10f0a89fd97.png" title=" User enters 'Jose' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="1a3797a03ca44da48b251e6f3df080a277e875402fbe294ed43ff10f0a89fd97.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" User login (completed)" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Cristian | Gomez | 65432 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Jose | (completed)" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" Then answer" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" Then answer (completed)" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="52afbf1a8ff21af8899e21fa1b4c3a9a34150c7df65ac18d78ef2d4bc58c24c7.png" title=" 2: Enter the website and fill in the form ({firtsname=Cristian, pwdgenerate=65432, alias=Jose}) (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" 3: Enter the website and fill in the form ({firtsname=Jose, pwdgenerate=92189282, alias=Juan})" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User opens the Home page" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Jose | Gomez | 92189282 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Juan |" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User login" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb48402@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="2160f925fe78d123b1bd2d3ba34b99c23ac82c71a38b97046e07aa7c34fe11a5.png" title=" User enters 'jsgprueb48402@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="2160f925fe78d123b1bd2d3ba34b99c23ac82c71a38b97046e07aa7c34fe11a5.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="8c31813c3a276233ae1c20c47cc84f73331333dafc82b8d6bfc61aeb3a6ab6c0.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="8c31813c3a276233ae1c20c47cc84f73331333dafc82b8d6bfc61aeb3a6ab6c0.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="ec29a667121f1ebc71f3d17c0a7ab77351bb1a8c4ef144590f0f8c3d5043ff47.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="ec29a667121f1ebc71f3d17c0a7ab77351bb1a8c4ef144590f0f8c3d5043ff47.png" title=" User enters 'Jose' into Seleccionar input name" width="1350"/>
+                <img src="cbf5271638e694faabc8741e3f5c63cda3b4adb787d1f8d77d37bfa62e818fc4.png" title=" User enters 'Jose' into Seleccionar input name (completed)" width="1350"/>
+                <img src="cbf5271638e694faabc8741e3f5c63cda3b4adb787d1f8d77d37bfa62e818fc4.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="6c07cfb000f77914935215e84a3afeed4f01b63df027851f1192e3e8fc4b12bd.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="6c07cfb000f77914935215e84a3afeed4f01b63df027851f1192e3e8fc4b12bd.png" title=" User enters 'mobile61575@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="87578dea76dfccdd84ecaf54f2d3bdd3aa6fd4948f0b5bd4c3265b0c0980a53f.png" title=" User enters 'mobile61575@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="87578dea76dfccdd84ecaf54f2d3bdd3aa6fd4948f0b5bd4c3265b0c0980a53f.png" title=" User enters '92189282' into Seleccionar input de password" width="1350"/>
+                <img src="2fe9c90028164fc3f255237fd4261dd2ea4f6619680d0d6337e9e9300653d52f.png" title=" User enters '92189282' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="2fe9c90028164fc3f255237fd4261dd2ea4f6619680d0d6337e9e9300653d52f.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="444c1ac7f1119c6e68c3386fd5694e4581904315c7a8a04aefa350e3ce9063de.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="444c1ac7f1119c6e68c3386fd5694e4581904315c7a8a04aefa350e3ce9063de.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="488ea135a06e4c8015310d147afac5af7e33a6db611fda1957f82433a76e6d06.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="488ea135a06e4c8015310d147afac5af7e33a6db611fda1957f82433a76e6d06.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="d1ef790596e62acf662f22de86f63368bd342e18703c116a8b927e0b9b2de7f7.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="d1ef790596e62acf662f22de86f63368bd342e18703c116a8b927e0b9b2de7f7.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="df849b84bb8c77a72813bd3bdfd931e45e5e00e31837596321b4c6e0e0863ee9.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="df849b84bb8c77a72813bd3bdfd931e45e5e00e31837596321b4c6e0e0863ee9.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="a2a7cc0d3b06da44bc0f909aa57a9eac1642de1cbbc3f5b16053c45e56a63436.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="a2a7cc0d3b06da44bc0f909aa57a9eac1642de1cbbc3f5b16053c45e56a63436.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="40166866e7f4a327a417e77c98971c12446a1946e165d2d7802ac976cfe1177b.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="40166866e7f4a327a417e77c98971c12446a1946e165d2d7802ac976cfe1177b.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="6bb5aa291307f3ccfd18410ae3c21b2e21b1fdf87c8bd9c628e267b8db491a50.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="6bb5aa291307f3ccfd18410ae3c21b2e21b1fdf87c8bd9c628e267b8db491a50.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="d04d8a9a8ca830214d1a39d90529ea99314fddef13e5fa8510280eca5b8a53c6.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="d04d8a9a8ca830214d1a39d90529ea99314fddef13e5fa8510280eca5b8a53c6.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="0a0d9e11fd3aef46dd031eba9b2e876945206eb4f597cf92bf4ade967ea3aa5b.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="0a0d9e11fd3aef46dd031eba9b2e876945206eb4f597cf92bf4ade967ea3aa5b.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="64916df8fa5a5a720613a5a132e64ae7582af0a27908b2975c8e6ef7dd8e57c6.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="64916df8fa5a5a720613a5a132e64ae7582af0a27908b2975c8e6ef7dd8e57c6.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="e03e3723d4ddba1e57261996b075842de518cc75cd1ec6064a9ccb3c92c572e5.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="e03e3723d4ddba1e57261996b075842de518cc75cd1ec6064a9ccb3c92c572e5.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="b05c49a700a20f31b0d91eea0bd6c3164335b38317af27d0d7dd4f89bc2d911b.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="b05c49a700a20f31b0d91eea0bd6c3164335b38317af27d0d7dd4f89bc2d911b.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="79c17e1d3262837ddd2778291f232c84dbb7783dca4eaba8a8618263f4709f90.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="79c17e1d3262837ddd2778291f232c84dbb7783dca4eaba8a8618263f4709f90.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'Juan' into Alias apra recordad la direccion" width="1350"/>
+                <img src="b070a973be4ee9e67d0c0c6453bbb3551c24d33d6b988c3a8b22688eab8b13d5.png" title=" User enters 'Juan' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="b070a973be4ee9e67d0c0c6453bbb3551c24d33d6b988c3a8b22688eab8b13d5.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" User login (completed)" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Jose | Gomez | 92189282 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Juan | (completed)" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" Then answer" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" Then answer (completed)" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="f38f3b12f03e4688798cc70de107fad9478e7d5dd497cf03293402eb3e1aecde.png" title=" 3: Enter the website and fill in the form ({firtsname=Jose, pwdgenerate=92189282, alias=Juan}) (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" 4: Enter the website and fill in the form ({firtsname=Chepe, pwdgenerate=9218912, alias=Carolina})" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User opens the Home page" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Chepe | Gomez | 9218912 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Carolina |" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User login" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb42285@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="95720cfc0e37c807d7a54e50796f324fc696b5ab9cf6a090b4cf568b23a16ba8.png" title=" User enters 'jsgprueb42285@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="95720cfc0e37c807d7a54e50796f324fc696b5ab9cf6a090b4cf568b23a16ba8.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="669731335bf04e6d057936467891c6e27aae7354b8bb57ef5c07846b4f551006.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="669731335bf04e6d057936467891c6e27aae7354b8bb57ef5c07846b4f551006.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User enters 'Chepe' into Seleccionar input name" width="1350"/>
+                <img src="27a83e4f9ad819c30004d677c48f4be5d3102e82e0cef443d0f1c4186d9a6310.png" title=" User enters 'Chepe' into Seleccionar input name (completed)" width="1350"/>
+                <img src="27a83e4f9ad819c30004d677c48f4be5d3102e82e0cef443d0f1c4186d9a6310.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="ec898743525b4ecfcc657000c6822762af378d59e83a390dad99fc54b07aa3b2.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="ec898743525b4ecfcc657000c6822762af378d59e83a390dad99fc54b07aa3b2.png" title=" User enters 'mobile82926@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="9e3aed27cd27620989a965321547933b94ade1382413ffe8d73d220e1313aaec.png" title=" User enters 'mobile82926@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="9e3aed27cd27620989a965321547933b94ade1382413ffe8d73d220e1313aaec.png" title=" User enters '9218912' into Seleccionar input de password" width="1350"/>
+                <img src="e6a088c208c3ee83d3397bff4639d66114756637f42161946fb57890ac33bef7.png" title=" User enters '9218912' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="e6a088c208c3ee83d3397bff4639d66114756637f42161946fb57890ac33bef7.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="1342e476201a8e03501dd1e87482d377ed3495453ce16ab94668ebde3ca4290b.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="1342e476201a8e03501dd1e87482d377ed3495453ce16ab94668ebde3ca4290b.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="2d57f38d4b60521724eb73ec461af5c1536d3b2be8835b7f6afd628e7a2cf718.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="2d57f38d4b60521724eb73ec461af5c1536d3b2be8835b7f6afd628e7a2cf718.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="7dd274a0bd4453a5c09c480876f31d7d138863ebe3c3e2b1fbd838f6f2bb648a.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="7dd274a0bd4453a5c09c480876f31d7d138863ebe3c3e2b1fbd838f6f2bb648a.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="29adb924c32ae47ae4a9c8b9f3a212be11532a15fa30cf18c9bd7d2236be9d30.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="29adb924c32ae47ae4a9c8b9f3a212be11532a15fa30cf18c9bd7d2236be9d30.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="9d93082fb2ff0b967f1c4abebfd6080e31fe75e53259ca10a39a26d770f96efb.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="9d93082fb2ff0b967f1c4abebfd6080e31fe75e53259ca10a39a26d770f96efb.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="b48eb441b350098768687642b75fd1971545b2a98abced3676f3223eddcaeb70.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="b48eb441b350098768687642b75fd1971545b2a98abced3676f3223eddcaeb70.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="b50ada3adc482c72bfba78685dcd9436857655de5954bc344494eb5e5cd7ec09.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="b50ada3adc482c72bfba78685dcd9436857655de5954bc344494eb5e5cd7ec09.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="3d5e9a147b78010c0a71a8a2c55c98c78c99a13bd25b4a0d0e2257eb2748bcbe.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="3d5e9a147b78010c0a71a8a2c55c98c78c99a13bd25b4a0d0e2257eb2748bcbe.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="825fa331440725d4c4d0be76f295c9fe6116d1b09f57afe56e7b835af3dc9178.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="825fa331440725d4c4d0be76f295c9fe6116d1b09f57afe56e7b835af3dc9178.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="b40d3bc6a5a4fe0a1ae6708dc7dbe72fb087b32a3efe8194908a3298f42f047d.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="b40d3bc6a5a4fe0a1ae6708dc7dbe72fb087b32a3efe8194908a3298f42f047d.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="5b8d55ed51fe5c307d9263fce326eeed31425246d60ff1d5f8f365f368eabc0f.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="5b8d55ed51fe5c307d9263fce326eeed31425246d60ff1d5f8f365f368eabc0f.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="d757d577e808a4f484095a0ba19800648ae3371a99c523ce5e230043a610a362.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="d757d577e808a4f484095a0ba19800648ae3371a99c523ce5e230043a610a362.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'Carolina' into Alias apra recordad la direccion" width="1350"/>
+                <img src="2f043591d6c120864e5574e9fc3515784ec647d44f8245c195837fa320abd0a0.png" title=" User enters 'Carolina' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="2f043591d6c120864e5574e9fc3515784ec647d44f8245c195837fa320abd0a0.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" User login (completed)" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Chepe | Gomez | 9218912 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Carolina | (completed)" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" Then answer" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" Then answer (completed)" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="267562e9e65c051227b73b6eee231e693daa8037ed7a83a42ab9804c6358d3b2.png" title=" 4: Enter the website and fill in the form ({firtsname=Chepe, pwdgenerate=9218912, alias=Carolina}) (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" 5: Enter the website and fill in the form ({firtsname=Carlos, pwdgenerate=43242323, alias=siguiente})" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User opens the Home page" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Carlos | Gomez | 43242323 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | siguiente |" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User login" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb87478@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="54e3c0f47079718b1211dcfa7290576d52c22553531fc0ff1dc06fafa8eb0cc2.png" title=" User enters 'jsgprueb87478@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="54e3c0f47079718b1211dcfa7290576d52c22553531fc0ff1dc06fafa8eb0cc2.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="eabd8e9881dc38ae8c5aa753d6895408a48928d303bfdd471472021a8a8711ae.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="eabd8e9881dc38ae8c5aa753d6895408a48928d303bfdd471472021a8a8711ae.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="62d6b669785df73d2e889f5257f5eb165cb5070a7737ae00a0ec67a29e96db69.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="62d6b669785df73d2e889f5257f5eb165cb5070a7737ae00a0ec67a29e96db69.png" title=" User enters 'Carlos' into Seleccionar input name" width="1350"/>
+                <img src="a8fe551a26237556f13b557f8655a3d6580e674b2f8121a5e47d583f2cc0041c.png" title=" User enters 'Carlos' into Seleccionar input name (completed)" width="1350"/>
+                <img src="a8fe551a26237556f13b557f8655a3d6580e674b2f8121a5e47d583f2cc0041c.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="ac7f2a7175326403c1655cc19bc9c90e0153ab930ca0295ca84d73b9317c2b08.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="ac7f2a7175326403c1655cc19bc9c90e0153ab930ca0295ca84d73b9317c2b08.png" title=" User enters 'mobile86028@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="70536744cbf48e95d7ab0e4e1e351644df8747f72563e42c05f85a611a565317.png" title=" User enters 'mobile86028@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="70536744cbf48e95d7ab0e4e1e351644df8747f72563e42c05f85a611a565317.png" title=" User enters '43242323' into Seleccionar input de password" width="1350"/>
+                <img src="f26282550013c9601f8021e4ec02a0c1427a6ab91007f65ef7ed930f39d3f786.png" title=" User enters '43242323' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="f26282550013c9601f8021e4ec02a0c1427a6ab91007f65ef7ed930f39d3f786.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="b08384e6676f3fa45ea2a90b4a1e5b84eeea4cf09ea5281e82fc2acf9386c7b7.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="b08384e6676f3fa45ea2a90b4a1e5b84eeea4cf09ea5281e82fc2acf9386c7b7.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="a3b600eaa2749d0bc3c2c38682be925217734b0088dc155626dcdf2abce1065d.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="a3b600eaa2749d0bc3c2c38682be925217734b0088dc155626dcdf2abce1065d.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="9bc355a71891af5f6d0cfa01f1bd3b108b4fd67d755d4bd53b4d262a560e8d87.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="9bc355a71891af5f6d0cfa01f1bd3b108b4fd67d755d4bd53b4d262a560e8d87.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="ca82ce52ec2333dc969b4d70a44b86a2c66303028fa49628ae037c422d739fcf.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="ca82ce52ec2333dc969b4d70a44b86a2c66303028fa49628ae037c422d739fcf.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="a6738ba338b484d4dab7623aee2d330b939e7aafbeb18c15f0aa9043f3ad4955.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="a6738ba338b484d4dab7623aee2d330b939e7aafbeb18c15f0aa9043f3ad4955.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="1fedcf51fe1d1aa739e49ad47faaa52dac7b018b0a73e0f52c67ad9f3a3fda1f.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="1fedcf51fe1d1aa739e49ad47faaa52dac7b018b0a73e0f52c67ad9f3a3fda1f.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="6bb5aa291307f3ccfd18410ae3c21b2e21b1fdf87c8bd9c628e267b8db491a50.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="6bb5aa291307f3ccfd18410ae3c21b2e21b1fdf87c8bd9c628e267b8db491a50.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="d04d8a9a8ca830214d1a39d90529ea99314fddef13e5fa8510280eca5b8a53c6.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="d04d8a9a8ca830214d1a39d90529ea99314fddef13e5fa8510280eca5b8a53c6.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="0a0d9e11fd3aef46dd031eba9b2e876945206eb4f597cf92bf4ade967ea3aa5b.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="0a0d9e11fd3aef46dd031eba9b2e876945206eb4f597cf92bf4ade967ea3aa5b.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="64916df8fa5a5a720613a5a132e64ae7582af0a27908b2975c8e6ef7dd8e57c6.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="64916df8fa5a5a720613a5a132e64ae7582af0a27908b2975c8e6ef7dd8e57c6.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="e03e3723d4ddba1e57261996b075842de518cc75cd1ec6064a9ccb3c92c572e5.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="e03e3723d4ddba1e57261996b075842de518cc75cd1ec6064a9ccb3c92c572e5.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="f6de22dc90c6c1ed07d60cdbc10dae701250fd4733b5fda2e5b5379389e71f30.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="f6de22dc90c6c1ed07d60cdbc10dae701250fd4733b5fda2e5b5379389e71f30.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'siguiente' into Alias apra recordad la direccion" width="1350"/>
+                <img src="dce9a2444ebf91a0a545b778e35a498e6733ab36762a38d15a858e944b6b3435.png" title=" User enters 'siguiente' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="dce9a2444ebf91a0a545b778e35a498e6733ab36762a38d15a858e944b6b3435.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" User login (completed)" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Carlos | Gomez | 43242323 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | siguiente | (completed)" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" Then answer" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" Then answer (completed)" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="7ae62ef52aa6da46386f03b661bb31735fccdc263a2af7b758cd1bf3cebac764.png" title=" 5: Enter the website and fill in the form ({firtsname=Carlos, pwdgenerate=43242323, alias=siguiente}) (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" 6: Enter the website and fill in the form ({firtsname=Prueba, pwdgenerate=7677823, alias=el otro})" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User opens the Home page" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User open task (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" Given the user wishes to create an account on the website (completed)" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Prueba | Gomez | 7677823 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | el otro |" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User login" width="1350"/>
+                <img src="0413be1170a5fa40d41642d361f3edb877195a5d865be304de1b09d28ca2a39a.png" title=" User clicks on Seleccioanr el login" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User clicks on Seleccioanr el login (completed)" width="1350"/>
+                <img src="2d91f8adc41e1e3142e9c21686fd76befb311f74da83caa88d94b9b4bc4297a4.png" title=" User enters 'jsgprueb87387@gmail.com' into Seleccionar input del email" width="1350"/>
+                <img src="c474a209071ef05a5a8c1470c9ec5a7c01350f070bc467ffdc2862facfb413c3.png" title=" User enters 'jsgprueb87387@gmail.com' into Seleccionar input del email (completed)" width="1350"/>
+                <img src="c474a209071ef05a5a8c1470c9ec5a7c01350f070bc467ffdc2862facfb413c3.png" title=" User clicks on Hace click en el boton para iniciar sesion" width="1350"/>
+                <img src="b2bc5cd80d50868197cf76200f01e32d0bc823ce6a9900ca2f8a4510a994590c.png" title=" User clicks on Hace click en el boton para iniciar sesion (completed)" width="1350"/>
+                <img src="b2bc5cd80d50868197cf76200f01e32d0bc823ce6a9900ca2f8a4510a994590c.png" title=" User clicks on Hace click en el radio button de MR" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User clicks on Hace click en el radio button de MR (completed)" width="1350"/>
+                <img src="399c9fe8b8ade527bc17f0926df799902cd67c9a9d5d9e7150b709342035437f.png" title=" User enters 'Prueba' into Seleccionar input name" width="1350"/>
+                <img src="ab76f42d565614513391e6fdd50a84d5031af00e9553d54985ce6e7be5839f26.png" title=" User enters 'Prueba' into Seleccionar input name (completed)" width="1350"/>
+                <img src="ab76f42d565614513391e6fdd50a84d5031af00e9553d54985ce6e7be5839f26.png" title=" User enters 'Gomez' into Seleccionar input de last name" width="1350"/>
+                <img src="430d0ea628b30bf50a9879d6d7217cd3f55edef06c252c10f972ea93f6321cde.png" title=" User enters 'Gomez' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="430d0ea628b30bf50a9879d6d7217cd3f55edef06c252c10f972ea93f6321cde.png" title=" User enters 'mobile32989@gmail.com' into Seleccionar input de last name" width="1350"/>
+                <img src="b533c522f5afa8225953b58c7460efdf7fecb6798874d0f8357dac2c2a874964.png" title=" User enters 'mobile32989@gmail.com' into Seleccionar input de last name (completed)" width="1350"/>
+                <img src="b533c522f5afa8225953b58c7460efdf7fecb6798874d0f8357dac2c2a874964.png" title=" User enters '7677823' into Seleccionar input de password" width="1350"/>
+                <img src="dae97db7b2deb0a955eb6e41147adf8a94792939519c935d9c41459a24274a64.png" title=" User enters '7677823' into Seleccionar input de password (completed)" width="1350"/>
+                <img src="dae97db7b2deb0a955eb6e41147adf8a94792939519c935d9c41459a24274a64.png" title=" User clicks on Selecciona el dia de nacimiento" width="1350"/>
+                <img src="b0c6495b79f0bef8dd4cb37d06a0c5b417e487291f3773aa304d12d7ce1c7431.png" title=" User clicks on Selecciona el dia de nacimiento (completed)" width="1350"/>
+                <img src="b0c6495b79f0bef8dd4cb37d06a0c5b417e487291f3773aa304d12d7ce1c7431.png" title=" User clicks on Selecciona el mes de nacimiento" width="1350"/>
+                <img src="be6d920408c5a9ff0b9ce52d9f5ef6c81ffb1cd087c6cad182a57d5158a6ccea.png" title=" User clicks on Selecciona el mes de nacimiento (completed)" width="1350"/>
+                <img src="be6d920408c5a9ff0b9ce52d9f5ef6c81ffb1cd087c6cad182a57d5158a6ccea.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento" width="1350"/>
+                <img src="31b4fe6b6862bad632af28ae91d31a6d32e6ff93b4db4e1af2df147e95a088b0.png" title=" User clicks on Selecciona el a&ntilde;o de nacimiento (completed)" width="1350"/>
+                <img src="31b4fe6b6862bad632af28ae91d31a6d32e6ff93b4db4e1af2df147e95a088b0.png" title=" User clicks on Selecciona check de newsletter" width="1350"/>
+                <img src="7ccf0f4e34ded84cf75981491b0ba55f974f44cd2fc9e3e8aed65ac5e6c92667.png" title=" User clicks on Selecciona check de newsletter (completed)" width="1350"/>
+                <img src="7ccf0f4e34ded84cf75981491b0ba55f974f44cd2fc9e3e8aed65ac5e6c92667.png" title=" User clicks on Selecciona check de partners" width="1350"/>
+                <img src="8e884eca19a1cc4d5c75dd60118eb4f8202ad60c31a4c5128311b08c7e4c8086.png" title=" User clicks on Selecciona check de partners (completed)" width="1350"/>
+                <img src="8e884eca19a1cc4d5c75dd60118eb4f8202ad60c31a4c5128311b08c7e4c8086.png" title=" User enters 'luiz' into Ingresa primer nombre conocido" width="1350"/>
+                <img src="ad5aa9722b8b970269965eb5a009b0a357615f90cd299b7e7444a892851ed06f.png" title=" User enters 'luiz' into Ingresa primer nombre conocido (completed)" width="1350"/>
+                <img src="ad5aa9722b8b970269965eb5a009b0a357615f90cd299b7e7444a892851ed06f.png" title=" User enters 'lopez' into Ingresa appellido conocido" width="1350"/>
+                <img src="b50ada3adc482c72bfba78685dcd9436857655de5954bc344494eb5e5cd7ec09.png" title=" User enters 'lopez' into Ingresa appellido conocido (completed)" width="1350"/>
+                <img src="b50ada3adc482c72bfba78685dcd9436857655de5954bc344494eb5e5cd7ec09.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia" width="1350"/>
+                <img src="3d5e9a147b78010c0a71a8a2c55c98c78c99a13bd25b4a0d0e2257eb2748bcbe.png" title=" User enters 'devbrothers' into Escribe el nombre de la compa&ntilde;ia (completed)" width="1350"/>
+                <img src="3d5e9a147b78010c0a71a8a2c55c98c78c99a13bd25b4a0d0e2257eb2748bcbe.png" title=" User enters 'calle11' into Escribe address 1" width="1350"/>
+                <img src="825fa331440725d4c4d0be76f295c9fe6116d1b09f57afe56e7b835af3dc9178.png" title=" User enters 'calle11' into Escribe address 1 (completed)" width="1350"/>
+                <img src="825fa331440725d4c4d0be76f295c9fe6116d1b09f57afe56e7b835af3dc9178.png" title=" User enters 'tower 14' into Escribe address 2" width="1350"/>
+                <img src="b40d3bc6a5a4fe0a1ae6708dc7dbe72fb087b32a3efe8194908a3298f42f047d.png" title=" User enters 'tower 14' into Escribe address 2 (completed)" width="1350"/>
+                <img src="b40d3bc6a5a4fe0a1ae6708dc7dbe72fb087b32a3efe8194908a3298f42f047d.png" title=" User enters 'medallin' into Escribe las ciudad" width="1350"/>
+                <img src="5b8d55ed51fe5c307d9263fce326eeed31425246d60ff1d5f8f365f368eabc0f.png" title=" User enters 'medallin' into Escribe las ciudad (completed)" width="1350"/>
+                <img src="5b8d55ed51fe5c307d9263fce326eeed31425246d60ff1d5f8f365f368eabc0f.png" title=" User clicks on Seleccionar la lista de estados" width="1350"/>
+                <img src="f3e3e5673a9df5701b9a9e56edd6d5118cb6c8c0c1210ac05bf53e1f2a0c40b6.png" title=" User clicks on Seleccionar la lista de estados (completed)" width="1350"/>
+                <img src="f3e3e5673a9df5701b9a9e56edd6d5118cb6c8c0c1210ac05bf53e1f2a0c40b6.png" title=" User clicks on Selecciona un estado" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User clicks on Selecciona un estado (completed)" width="1350"/>
+                <img src="4588625c8cfd96518a71e3287b7b7eab4d221153e36a16d18ab8e21d4613fb16.png" title=" User enters '05501' into Escribe el codigo postal" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User enters '05501' into Escribe el codigo postal (completed)" width="1350"/>
+                <img src="9143934f487c6875c0162899a21a6c589681e3b4435d4ec75f4a51c77d6b9432.png" title=" User clicks on Selecciona la lista de paises" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Selecciona la lista de paises (completed)" width="1350"/>
+                <img src="0fb3ae61affea43f5194beb2390c5869a42ab276a91054e110f5d3513e557909.png" title=" User clicks on Seleccionar el pais" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User clicks on Seleccionar el pais (completed)" width="1350"/>
+                <img src="4b582218333fb48631e3cb8a18030d3f3acbd026fdda902613a2f329691d637e.png" title=" User enters 'prueba' into Escribe otro dato" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters 'prueba' into Escribe otro dato (completed)" width="1350"/>
+                <img src="ef754e89665a51b344b2d6d7e8cbb1fadfe3d50e9a93541baf440d7a052b5c38.png" title=" User enters '323564565' into Escribe el telefono de la casa" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323564565' into Escribe el telefono de la casa (completed)" width="1350"/>
+                <img src="035d8e9ff9fae42bbc8672d173476434ed161048f32184600ddb7a5ba114ac98.png" title=" User enters '323212' into Escribe el telefono celular" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters '323212' into Escribe el telefono celular (completed)" width="1350"/>
+                <img src="3368a08939b6604474ed9f05a57a903b13873926415ca67d08ec75b90dea3407.png" title=" User enters 'el otro' into Alias apra recordad la direccion" width="1350"/>
+                <img src="bc10eb0a7125647284c7c9fbc255eae667034125bbc03a865efc51080b8dd64d.png" title=" User enters 'el otro' into Alias apra recordad la direccion (completed)" width="1350"/>
+                <img src="bc10eb0a7125647284c7c9fbc255eae667034125bbc03a865efc51080b8dd64d.png" title=" User clicks on Seleccionar el boton de registrar" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" User clicks on Seleccionar el boton de registrar (completed)" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" User login (completed)" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Prueba | Gomez | 7677823 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | el otro | (completed)" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" Then he must display a message MY ACCOUNT" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" Then answer" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" Then answer (completed)" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" Then he must display a message MY ACCOUNT (completed)" width="1350"/>
+                <img src="ed3cd65b3dd0a395f627d95c3694e7603bee2a8ee9a754526004513165aa81a0.png" title=" 6: Enter the website and fill in the form ({firtsname=Prueba, pwdgenerate=7677823, alias=el otro}) (completed): <span class='success-color'>SUCCESS</span>" width="1350"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.25</span>
+</div>
+</body>
+</html>

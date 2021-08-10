@@ -1,0 +1,714 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-17T20:25:16.531Z",
+        "before": [
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13498000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19422000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Camilo",
+                  "Gomez",
+                  "123456",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "luis"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 589000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T20:25:51.318Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8896000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18314000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Cristian",
+                  "Gomez",
+                  "65432",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "Jose"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 352000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T20:26:19.589Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10197000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19049000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Jose",
+                  "Gomez",
+                  "92189282",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "Juan"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 536000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T20:26:50.124Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4911000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19061000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Chepe",
+                  "Gomez",
+                  "9218912",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "Carolina"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 511000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T20:27:15.302Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4655000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17753000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Carlos",
+                  "Gomez",
+                  "43242323",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "siguiente"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 281000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T20:27:38.692Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.configuracionInicial()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Enter the website and fill in the form",
+        "description": "",
+        "id": "automation-of-web-shopping;enter-the-website-and-fill-in-the-form;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4871000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user wishes to create an account on the website",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18572000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters his or her data for the creation of a new system",
+            "match": {
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "firstname",
+                  "lastname",
+                  "pwd",
+                  "day",
+                  "month",
+                  "year",
+                  "addressname",
+                  "addresslast",
+                  "company",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postlcod",
+                  "comment",
+                  "mobile",
+                  "home",
+                  "alias"
+                ]
+              },
+              {
+                "cells": [
+                  "jsgprueb",
+                  "Prueba",
+                  "Gomez",
+                  "7677823",
+                  "5",
+                  "October",
+                  "1996",
+                  "luiz",
+                  "lopez",
+                  "devbrothers",
+                  "calle11",
+                  "tower 14",
+                  "medallin",
+                  "Massachusetts",
+                  "05501",
+                  "prueba",
+                  "323564565",
+                  "323212",
+                  "el otro"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he must display a message MY ACCOUNT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Automation of web shopping",
+    "description": "",
+    "id": "automation-of-web-shopping",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login/login.feature",
+    "tags": []
+  }
+]

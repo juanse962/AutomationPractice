@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation of web shopping" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-07-17T20:25:16" hostname="DESKTOP-Q8Q5O7B" time="166.713">
+  <properties/>
+  <testcase name="Enter the website and fill in the form #1" classname="Automation of web shopping" time="34.91"/>
+  <testcase name="Enter the website and fill in the form #2" classname="Automation of web shopping" time="28.271"/>
+  <testcase name="Enter the website and fill in the form #3" classname="Automation of web shopping" time="30.536"/>
+  <testcase name="Enter the website and fill in the form #4" classname="Automation of web shopping" time="25.178"/>
+  <testcase name="Enter the website and fill in the form #5" classname="Automation of web shopping" time="23.389"/>
+  <testcase name="Enter the website and fill in the form #6" classname="Automation of web shopping" time="24.429"/>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:12?[0m
+15:25:16.914 ?[92m|-- 1: Enter the website and fill in the form ({firtsname=Camilo, pwdgenerate=123456, alias=luis})?[0m
+15:25:16.974 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:25:17.272 ?[92m|------ User open task?[0m
+15:25:17.289 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:25:30.492 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Camilo | Gomez | 123456 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | luis |?[0m
+15:25:30.507 ?[92m|------ User login?[0m
+15:25:31.842 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:25:33.543 ?[92m|-------- User enters 'jsgprueb82743@gmail.com' into Seleccionar input del email?[0m
+15:25:34.237 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:25:34.678 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:25:36.035 ?[92m|-------- User enters 'Camilo' into Seleccionar input name?[0m
+15:25:36.632 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:25:37.182 ?[92m|-------- User enters 'mobile44468@gmail.com' into Seleccionar input de last name?[0m
+15:25:37.700 ?[92m|-------- User enters '123456' into Seleccionar input de password?[0m
+15:25:38.271 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:25:38.634 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:25:39.007 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:25:39.372 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:25:39.737 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:25:40.136 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:25:40.666 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:25:41.213 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:25:41.763 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:25:42.340 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:25:42.859 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:25:43.402 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:25:43.901 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:25:44.285 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:25:44.814 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:25:45.233 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:25:45.565 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:25:46.066 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:25:46.646 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:25:47.137 ?[92m|-------- User enters 'luis' into Alias apra recordad la direccion?[0m
+15:25:47.978 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:25:49.925 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:25:50.234 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:13?[0m
+15:25:51.320 ?[92m|-- 2: Enter the website and fill in the form ({firtsname=Cristian, pwdgenerate=65432, alias=Jose})?[0m
+15:25:51.323 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:25:51.328 ?[92m|------ User open task?[0m
+15:25:51.330 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:26:00.239 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Cristian | Gomez | 65432 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Jose |?[0m
+15:26:00.243 ?[92m|------ User login?[0m
+15:26:00.742 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:26:02.270 ?[92m|-------- User enters 'jsgprueb70264@gmail.com' into Seleccionar input del email?[0m
+15:26:02.865 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:26:03.312 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:26:04.610 ?[92m|-------- User enters 'Cristian' into Seleccionar input name?[0m
+15:26:05.283 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:26:05.820 ?[92m|-------- User enters 'mobile22202@gmail.com' into Seleccionar input de last name?[0m
+15:26:06.382 ?[92m|-------- User enters '65432' into Seleccionar input de password?[0m
+15:26:06.913 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:26:07.283 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:26:07.654 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:26:08.103 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:26:08.612 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:26:08.995 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:26:09.491 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:26:09.999 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:26:10.530 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:26:11.065 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:26:11.653 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:26:12.230 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:26:12.745 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:26:13.103 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:26:13.694 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:26:14.095 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:26:14.412 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:26:15.055 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:26:15.583 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:26:16.076 ?[92m|-------- User enters 'Jose' into Alias apra recordad la direccion?[0m
+15:26:16.876 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:26:18.564 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:26:18.575 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:14?[0m
+15:26:19.593 ?[92m|-- 3: Enter the website and fill in the form ({firtsname=Jose, pwdgenerate=92189282, alias=Juan})?[0m
+15:26:19.597 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:26:19.600 ?[92m|------ User open task?[0m
+15:26:19.603 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:26:29.817 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Jose | Gomez | 92189282 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Juan |?[0m
+15:26:29.821 ?[92m|------ User login?[0m
+15:26:30.349 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:26:32.064 ?[92m|-------- User enters 'jsgprueb48402@gmail.com' into Seleccionar input del email?[0m
+15:26:32.648 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:26:33.062 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:26:34.327 ?[92m|-------- User enters 'Jose' into Seleccionar input name?[0m
+15:26:34.927 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:26:35.471 ?[92m|-------- User enters 'mobile61575@gmail.com' into Seleccionar input de last name?[0m
+15:26:36.198 ?[92m|-------- User enters '92189282' into Seleccionar input de password?[0m
+15:26:36.729 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:26:37.106 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:26:37.527 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:26:37.882 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:26:38.269 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:26:38.669 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:26:39.191 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:26:39.715 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:26:40.304 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:26:40.900 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:26:41.475 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:26:42.026 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:26:42.493 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:26:42.881 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:26:43.428 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:26:43.903 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:26:44.254 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:26:44.888 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:26:45.430 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:26:45.978 ?[92m|-------- User enters 'Juan' into Alias apra recordad la direccion?[0m
+15:26:46.909 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:26:49.104 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:26:49.117 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:15?[0m
+15:26:50.127 ?[92m|-- 4: Enter the website and fill in the form ({firtsname=Chepe, pwdgenerate=9218912, alias=Carolina})?[0m
+15:26:50.129 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:26:50.132 ?[92m|------ User open task?[0m
+15:26:50.133 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:26:55.063 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Chepe | Gomez | 9218912 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | Carolina |?[0m
+15:26:55.068 ?[92m|------ User login?[0m
+15:26:55.683 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:26:57.499 ?[92m|-------- User enters 'jsgprueb42285@gmail.com' into Seleccionar input del email?[0m
+15:26:58.122 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:26:58.702 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:26:59.881 ?[92m|-------- User enters 'Chepe' into Seleccionar input name?[0m
+15:27:00.538 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:27:01.164 ?[92m|-------- User enters 'mobile82926@gmail.com' into Seleccionar input de last name?[0m
+15:27:01.701 ?[92m|-------- User enters '9218912' into Seleccionar input de password?[0m
+15:27:02.317 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:27:02.705 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:27:03.088 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:27:03.499 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:27:03.877 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:27:04.279 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:27:04.798 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:27:05.381 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:27:05.917 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:27:06.480 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:27:06.998 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:27:07.550 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:27:07.969 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:27:08.386 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:27:08.926 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:27:09.353 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:27:09.686 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:27:10.217 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:27:10.744 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:27:11.351 ?[92m|-------- User enters 'Carolina' into Alias apra recordad la direccion?[0m
+15:27:12.141 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:27:14.373 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:27:14.386 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:16?[0m
+15:27:15.306 ?[92m|-- 5: Enter the website and fill in the form ({firtsname=Carlos, pwdgenerate=43242323, alias=siguiente})?[0m
+15:27:15.309 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:27:15.313 ?[92m|------ User open task?[0m
+15:27:15.316 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:27:19.983 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Carlos | Gomez | 43242323 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | siguiente |?[0m
+15:27:19.985 ?[92m|------ User login?[0m
+15:27:20.489 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:27:22.108 ?[92m|-------- User enters 'jsgprueb87478@gmail.com' into Seleccionar input del email?[0m
+15:27:22.685 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:27:23.129 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:27:24.703 ?[92m|-------- User enters 'Carlos' into Seleccionar input name?[0m
+15:27:25.315 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:27:25.868 ?[92m|-------- User enters 'mobile86028@gmail.com' into Seleccionar input de last name?[0m
+15:27:26.377 ?[92m|-------- User enters '43242323' into Seleccionar input de password?[0m
+15:27:26.901 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:27:27.259 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:27:27.633 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:27:27.992 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:27:28.348 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:27:28.760 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:27:29.244 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:27:29.692 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:27:30.178 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:27:30.716 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:27:31.212 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:27:31.700 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:27:32.178 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:27:32.536 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:27:33.031 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:27:33.455 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:27:33.811 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:27:34.312 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:27:34.811 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:27:35.313 ?[92m|-------- User enters 'siguiente' into Alias apra recordad la direccion?[0m
+15:27:36.074 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:27:37.745 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:27:37.755 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+
+@smoke
+Scenario Outline: Enter the website and fill in the form                ?[90m# src/test/resources/features/login/login.feature:17?[0m
+15:27:38.695 ?[92m|-- 6: Enter the website and fill in the form ({firtsname=Prueba, pwdgenerate=7677823, alias=el otro})?[0m
+15:27:38.700 ?[92m|---- Given the user wishes to create an account on the website?[0m
+15:27:38.703 ?[92m|------ User open task?[0m
+15:27:38.707 ?[92m|-------- User opens the Home page?[0m
+  ?[32mGiven ?[0m?[32mthe user wishes to create an account on the website?[0m             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_wishes_to_create_an_account_on_the_website()?[0m
+15:27:43.590 ?[92m|---- When the user enters his or her data for the creation of a new system
+| email | firstname | lastname | pwd | day | month | year | addressname | addresslast | company | address1 | address2 | city | state | postlcod | comment | mobile | home | alias |
+| jsgprueb | Prueba | Gomez | 7677823 | 5 | October | 1996 | luiz | lopez | devbrothers | calle11 | tower 14 | medallin | Massachusetts | 05501 | prueba | 323564565 | 323212 | el otro |?[0m
+15:27:43.593 ?[92m|------ User login?[0m
+15:27:44.072 ?[92m|-------- User clicks on Seleccioanr el login?[0m
+15:27:46.565 ?[92m|-------- User enters 'jsgprueb87387@gmail.com' into Seleccionar input del email?[0m
+15:27:47.185 ?[92m|-------- User clicks on Hace click en el boton para iniciar sesion?[0m
+15:27:47.573 ?[92m|-------- User clicks on Hace click en el radio button de MR?[0m
+15:27:48.887 ?[92m|-------- User enters 'Prueba' into Seleccionar input name?[0m
+15:27:49.491 ?[92m|-------- User enters 'Gomez' into Seleccionar input de last name?[0m
+15:27:50.058 ?[92m|-------- User enters 'mobile32989@gmail.com' into Seleccionar input de last name?[0m
+15:27:50.586 ?[92m|-------- User enters '7677823' into Seleccionar input de password?[0m
+15:27:51.082 ?[92m|-------- User clicks on Selecciona el dia de nacimiento?[0m
+15:27:51.485 ?[92m|-------- User clicks on Selecciona el mes de nacimiento?[0m
+15:27:51.843 ?[92m|-------- User clicks on Selecciona el año de nacimiento?[0m
+15:27:52.204 ?[92m|-------- User clicks on Selecciona check de newsletter?[0m
+15:27:52.616 ?[92m|-------- User clicks on Selecciona check de partners?[0m
+15:27:52.974 ?[92m|-------- User enters 'luiz' into Ingresa primer nombre conocido?[0m
+15:27:53.462 ?[92m|-------- User enters 'lopez' into Ingresa appellido conocido?[0m
+15:27:53.910 ?[92m|-------- User enters 'devbrothers' into Escribe el nombre de la compañia?[0m
+15:27:54.446 ?[92m|-------- User enters 'calle11' into Escribe address 1?[0m
+15:27:54.951 ?[92m|-------- User enters 'tower 14' into Escribe address 2?[0m
+15:27:55.429 ?[92m|-------- User enters 'medallin' into Escribe las ciudad?[0m
+15:27:55.966 ?[92m|-------- User clicks on Seleccionar la lista de estados?[0m
+15:27:56.446 ?[92m|-------- User clicks on Selecciona un estado?[0m
+15:27:56.800 ?[92m|-------- User enters '05501' into Escribe el codigo postal?[0m
+15:27:57.277 ?[92m|-------- User clicks on Selecciona la lista de paises?[0m
+15:27:57.704 ?[92m|-------- User clicks on Seleccionar el pais?[0m
+15:27:58.026 ?[92m|-------- User enters 'prueba' into Escribe otro dato?[0m
+15:27:58.522 ?[92m|-------- User enters '323564565' into Escribe el telefono de la casa?[0m
+15:27:59.008 ?[92m|-------- User enters '323212' into Escribe el telefono celular?[0m
+15:27:59.463 ?[92m|-------- User enters 'el otro' into Alias apra recordad la direccion?[0m
+15:28:00.161 ?[92m|-------- User clicks on Seleccionar el boton de registrar?[0m
+  ?[32mWhen ?[0m?[32mthe user enters his or her data for the creation of a new system?[0m ?[90m# stepdefenitions.login.StepDefinitionLoginUser.the_user_enters_his_or_her_data_for_the_creation_of_a_new_system(io.cucumber.datatable.DataTable)?[0m
+15:28:02.172 ?[92m|---- Then he must display a message MY ACCOUNT?[0m
+15:28:02.183 ?[92m|------ Then answer?[0m
+  ?[32mThen ?[0m?[32mhe must display a message ?[0m?[32m?[1mMY ACCOUNT?[0m                             ?[90m# stepdefenitions.login.StepDefinitionLoginUser.he_must_display_a_messagee(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Enter the website and fill in the form(automation-of-web-shopping;enter-the-website-and-fill-in-the-form)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 8812
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:25:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Enter the website and fill in the form
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 22990
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:25:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Enter the website and fill in the form
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31496
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:26:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 39246
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:26:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 29853
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:27:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--ignore-..., goog:chromeOptions: {args: [--start-maximized, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3, --disable-logging, --user-agent=User-Agent:Moz..., --window-size=1366,768], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 43319
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 17, 2021 3:27:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

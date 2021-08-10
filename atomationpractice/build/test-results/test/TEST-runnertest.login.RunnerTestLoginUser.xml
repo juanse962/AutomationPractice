@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runnertest.login.RunnerTestLoginUser" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-Q8Q5O7B" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+6 Scenarios (?[32m6 passed?[0m)
+18 Steps (?[32m18 passed?[0m)
+2m46.931s
+
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+[Test worker] INFO  - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO  - Test Suite Started: Automation of web shopping
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4957eea: Generating report for test outcome: Automation of web shopping:Enter the website and fill in the form
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5ee969ad: Generating report for test outcome: Automation of web shopping:Enter the website and fill in the form
+[pool-2-thread-1] INFO serenity.reporting - 
+-----------------------------------------------------
+| TEST NAME:   ?[1mEnter the website and fill in the form?[0m
+| RESULT:      ?[92mPassing?[0m
+| REQUIREMENT: Automation of web shopping
+| REPORT:      ?[96mfile:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/target/site/serenity/21de0d6c2b24c7a12743ab6c00368c93d7bacc1fe1748c374a618e617ac5bcb0.html?[0m
+-----------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/user/OneDrive/Escritorio/portales_automation/atomationpractice/src/test/resources/features/login/login.feature
+]]></system-err>
+</testsuite>
