@@ -12,6 +12,3 @@ Feature: Automation of web shopping
       | Camilo    | 123456      | luis      |
       | Cristian  | 65432       | Jose      |
       | Jose      | 92189282    | Juan      |
-      | Chepe     | 9218912     | Carolina  |
-      | Carlos    | 43242323    | siguiente |
-      | Prueba    | 7677823     | el otro   |
