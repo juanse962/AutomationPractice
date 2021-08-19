@@ -3,6 +3,8 @@ package userinterface;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class LoginManagement {
+    public static final Target INFO= Target.the("Seleccioanr el login")
+            .locatedBy("//div[@id='cmsinfo_block']//li[1]//h3");
     public static final Target SIGN_IN= Target.the("Seleccioanr el login")
             .locatedBy("//a[contains(text(),'Sign in')]");
     public static final Target INPUT_EMAIL = Target.the("Seleccionar input del email")
