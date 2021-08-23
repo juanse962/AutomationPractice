@@ -29,7 +29,7 @@ public class Login implements Task {
         String EMAIL_DOMAIN = "@gmail.com";
         int parOrInpar = parseInt(Random.generate());
         actor.attemptsTo(
-                Ensure.that(INFO).textValues().containsExactlyElementsFrom(values),
+                Ensure.that(INFO).textValues().isNotEmpty(),
                 Click.on(SIGN_IN),
                 Enter.theValue(list.get(19) + Random.generate() + EMAIL_DOMAIN).into(INPUT_EMAIL),
                 Click.on(BUTTON_LOGIN),

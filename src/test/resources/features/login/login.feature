@@ -1,5 +1,4 @@
 Feature: Automation of web shopping
-
   @smoke
   Scenario Outline: Enter the website and fill in the form
     Given the user wishes to create an account on the website
