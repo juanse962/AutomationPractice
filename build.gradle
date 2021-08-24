@@ -46,7 +46,6 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-ensure', version: '2.4.24'
     testImplementation 'org.assertj:assertj-core:3.9.1'
     implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.4.1.jre8'
-    testImplementation 'org.hamcrest:hamcrest:2.2'
 }
 test{
     systemProperties System.getProperties()
